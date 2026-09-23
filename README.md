@@ -106,7 +106,7 @@ curl http://localhost:5000/api/hello
 
 ```bash
 # Build image with tag
-docker build -t iamsamitdev/flask-docker-app:latest .
+docker build -t sakamotolv99/flask-docker-app:latest .
 
 # Run container in background
 docker run -d -p 5000:5000 --name flask-app flask-docker-app
@@ -121,7 +121,7 @@ docker stop flask-app
 docker rm flask-app
 
 # Push to Docker Hub
-docker push iamsamitdev/flask-docker-app:latest
+docker push sakamotolv99/flask-docker-app:latest
 ```
 
 ## 🧪 Testing
@@ -609,7 +609,7 @@ addopts = -v --tb=short
 |----------|-------------|---------|
 | `DOCKERHUB_CREDENTIALS` | Docker Hub login credentials | `dockerhub-credentials` |
 | `N8N_WEBHOOK_URL_CREDENTIALS` | N8N webhook URL | `n8n-webhook-url` |
-| `DOCKER_IMAGE_NAME` | Docker image name | `iamsamitdev/flask-docker-app` |
+| `DOCKER_IMAGE_NAME` | Docker image name | `sakamotolv99/flask-docker-app` |
 | `DOCKER_IMAGE_TAG` | Image tag | `${BUILD_NUMBER}` |
 
 ### Runtime Environment
@@ -654,8 +654,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **📞 Contact Information:**
 
-- **Developer**: Samit
-- **Docker Hub**: [iamsamitdev](https://hub.docker.com/u/iamsamitdev)
+- **Credits**: Based on the DevOps Training Workshop by Samit ([iamsamitdev](https://github.com/iamsamitdev)). Pipeline set up and run by PLLV99.
 - **Project**: Flask Docker App Training Workshop
 
 **🔗 Related Projects:**
